@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <script src="planetData/ajax.js" defer></script>
     <title>test</title>
 </head>
+
 <body>
-    <label for="planetSelection">Planet:</label>
-    <select id="planetDataSelection" name="planetSelection">
+    <label for="planetSelection">Filter:</label>
+    <select id="planetDataSelection" name="planetSelection" onchange="displayPlanetData()" disabled>
         <option value="empty">keine Auswahl</option>
-        <option value="mercury">Merkur</option>
-        <option value="venus">Venus</option>
-        <option value="earth">Erde</option>
-        <option value="mars">Mars</option>
-        <option value="jupiter">Jupiter</option>
-        <option value="saturn">Saturn</option>
-        <option value="uranus">Uranus</option>
-        <option value="neptune">Neptun</option>
+        <option value="stone">Steinplaneten</option>
+        <option value="gas">Gasriesen</option>
+        <option value="ice">Eisriesen</option>
     </select>
 
     <div id="planetDataOutput">

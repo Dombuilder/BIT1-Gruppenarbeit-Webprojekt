@@ -1,31 +1,65 @@
 let planetsFetch = [];
 
 
-function fetchData(){
+function fetchData() {
     fetch("planetData/planets.json")
-        .then(function (response){
+        .then(function (response) {
             if (!response.ok) {
                 throw new Error("Es ist ein Netzwerkproblem aufgetreten");
             }
             return response.json();
         })
-        .then(function (data){
+        .then(function (data) {
             if (!Array.isArray(data.planets)) {
                 document.getElementById("planetDataOutput").innerHTML = "Keine Planeten gefunden";
                 return;
             }
 
-        planetsFetch = data.planets
-        console.log(planetsFetch)
-        printString(createPlanetDataString(planetsFetch), "planetDataOutput")    
+            planetsFetch = data.planets
+            displayPlanetData();
+
+            document.getElementById("planetDataSelection").disabled = false;
 
         })
-        .catch(function (error){
+        .catch(function (error) {
             document.getElementById("planetDataOutput").innerHTML = "Fehler:" + error;
+            console.log(error);
         })
 }
 
-function createPlanetDataString(planets){
+
+function displayPlanetData() {
+    let currentSelection = document.getElementById("planetDataSelection").value
+    let planetsOutput = filterPlanetsByType(planetsFetch, currentSelection)
+
+    document.getElementById("planetDataOutput").innerHTML = createPlanetDataString(planetsOutput);
+}
+
+
+//Hilfsmethoden
+function determineType(type) {
+    switch (type) {
+        case "stone":
+            return "Steinplanet";
+        case "gas":
+            return "Gasriese";
+        case "ice":
+            return "Eisriese";
+    }
+}
+
+function filterPlanetsByType(planets, type) {
+    if (type === null || type === "empty") {
+        return planets
+    }
+
+    const filteredPlanets = planets.filter(function (planet) {
+        return planet.type === type;
+    })
+    return filteredPlanets
+}
+
+function createPlanetDataString(planets) {
     let ausgabe = "";
 
     planets.forEach(function (planet) {
@@ -41,26 +75,7 @@ function createPlanetDataString(planets){
                 Fun Fact: ${planet.funFact} <br>
                 </p>`;
     });
-
     return ausgabe;
-}
-
-
-function determineType(type){
-    switch (type){
-            case "stone": 
-                return "Steinplanet"; 
-            case "gas": 
-                return "Gasriese";
-            case "ice": 
-                return "Eisriese";
-    }
-}
-
-function printString(string, elementId){
-    if (elementId === null || string === null) return;
-
-    document.getElementById(elementId).innerHTML = string;
 }
 
 

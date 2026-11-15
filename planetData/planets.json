@@ -1,6 +1,6 @@
 {
     "planets": [
-        {   
+        {
             "upid": "mercury",
             "displayName": "Merkur",
             "position": 1,
@@ -10,10 +10,13 @@
             "dayLengthInHours": 1407,
             "yearLengthInDays": 88,
             "numberOfMoons": 0,
-            "notableSpaceMissions": ["Mariner 10", "MESSENGER"],
+            "notableSpaceMissions": [
+                "Mariner 10",
+                "MESSENGER"
+            ],
             "funFact": ""
         },
-        {   
+        {
             "upid": "venus",
             "displayName": "Venus",
             "position": 2,
@@ -23,10 +26,14 @@
             "dayLengthInHours": 5832,
             "yearLengthInDays": 225,
             "numberOfMoons": 0,
-            "notableSpaceMissions": ["Venera", "Magellan", "Venus Express"],
+            "notableSpaceMissions": [
+                "Venera",
+                "Magellan",
+                "Venus Express"
+            ],
             "funFact": "Venus ist der einzige Planet, der sich andersrum dreht"
         },
-        {   
+        {
             "upid": "earth",
             "displayName": "Erde",
             "position": 3,
@@ -36,10 +43,12 @@
             "dayLengthInHours": 24,
             "yearLengthInDays": 365,
             "numberOfMoons": 1,
-            "notableSpaceMissions": ["ISS"],
+            "notableSpaceMissions": [
+                "ISS"
+            ],
             "funFact": ""
         },
-        {   
+        {
             "upid": "mars",
             "displayName": "Mars",
             "position": 4,
@@ -49,10 +58,13 @@
             "dayLengthInHours": 25,
             "yearLengthInDays": 687,
             "numberOfMoons": 2,
-            "notableSpaceMissions": ["Mars Odyssey","Curiosity"],
+            "notableSpaceMissions": [
+                "Mars Odyssey",
+                "Curiosity"
+            ],
             "funFact": ""
         },
-        {   
+        {
             "upid": "jupiter",
             "displayName": "Jupiter",
             "position": 5,
@@ -62,10 +74,14 @@
             "dayLengthInHours": 10,
             "yearLengthInDays": 4331,
             "numberOfMoons": 95,
-            "notableSpaceMissions": ["Juno","JUICE","Europa Clipper"],
+            "notableSpaceMissions": [
+                "Juno",
+                "JUICE",
+                "Europa Clipper"
+            ],
             "funFact": ""
         },
-        {   
+        {
             "upid": "saturn",
             "displayName": "Saturn",
             "position": 6,
@@ -75,10 +91,12 @@
             "dayLengthInHours": 11,
             "yearLengthInDays": 10747,
             "numberOfMoons": 274,
-            "notableSpaceMissions": ["Pioneer 11"],
+            "notableSpaceMissions": [
+                "Pioneer 11"
+            ],
             "funFact": ""
         },
-        {   
+        {
             "upid": "uranus",
             "displayName": "Uranus",
             "position": 7,
@@ -88,10 +106,12 @@
             "dayLengthInHours": 17,
             "yearLengthInDays": 30589,
             "numberOfMoons": 28,
-            "notableSpaceMissions": ["Voyager II"],
+            "notableSpaceMissions": [
+                "Voyager II"
+            ],
             "funFact": ""
         },
-        {   
+        {
             "upid": "neptune",
             "displayName": "Neptun",
             "position": 8,
@@ -101,7 +121,9 @@
             "dayLengthInHours": 16,
             "yearLengthInDays": 59800,
             "numberOfMoons": 16,
-            "notableSpaceMissions": ["Voyager II"],
+            "notableSpaceMissions": [
+                "Voyager II"
+            ],
             "funFact": ""
         }
     ]
