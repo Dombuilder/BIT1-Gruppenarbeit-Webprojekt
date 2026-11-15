@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" src="">
+    <link 
+        rel="stylesheet"
+        href="styles.css"
+    >
+    <script src="scripts.js" defer></script>
+    <title>Planeten Gallery</title>
+</head>
+<style>
+    .PlanetSlides {
+        display:none;
+    }
+</style>
+<body>
+    
+    <h1>Unser Sonnensystem</h1>
+
+    <div class="PlanetenSlidedshow">
+        <button class="Lefty" onclick="plusDivs(-1)">&#10094</button>
+        <button class="Righty" onclick="plusDivs(1)">&#10095</button>
+
+        <img class="PlanetSlides" src="img/Mercury.jpg">
+        <img class="PlanetSlides" src="img/Venus.jpg">
+        <img class="PlanetSlides" src="img/Erde.jpg">
+        <img class="PlanetSlides" src="img/Mars.jpg">
+        <img class="PlanetSlides" src="img/Jupiter.jpg">
+        <img class="PlanetSlides" src="img/Saturn.jpg">
+        <img class="PlanetSlides" src="img/Uranus.png">
+        <img class="PlanetSlides" src="img/Neptun.png">
+    </div>
+
+    <p>Wähle einen Planeten aus um mehr über diesen zu erfahren</p>
+
+    <div id="planetselector">
+        <label for="Planeten">Wähle einen Planeten: </label>
+        <select name="Planeten" id="planets">
+            <option>-Bitte wählen-</option>
+            <option value="merkur">Merkur</option>
+            <option value="venus">Venus</option>
+            <option value="erde">Erde</option>
+            <option value="mars">Mars</option>
+            <option value="jupiter">Jupiter</option>
+            <option value="saturn">Saturn</option>
+            <option value="uranus">Uranus</option>
+            <option value="neptun">Neptun</option>
+        </select>
+    </div>
+    
+</body>
+</html>
