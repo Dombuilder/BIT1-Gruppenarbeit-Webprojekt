@@ -1,0 +1,108 @@
+{
+    "planets": [
+        {   
+            "upid": "mercury",
+            "displayName": "Merkur",
+            "position": 1,
+            "type": "stone",
+            "diameterKm": 4879,
+            "massInE20kg": 3300,
+            "dayLengthInHours": 1407,
+            "yearLengthInDays": 88,
+            "numberOfMoons": 0,
+            "notableSpaceMissions": ["Mariner 10", "MESSENGER"],
+            "funFact": ""
+        },
+        {   
+            "upid": "venus",
+            "displayName": "Venus",
+            "position": 2,
+            "type": "stone",
+            "diameterKm": 12104,
+            "massInE20kg": 48700,
+            "dayLengthInHours": 5832,
+            "yearLengthInDays": 225,
+            "numberOfMoons": 0,
+            "notableSpaceMissions": ["Venera", "Magellan", "Venus Express"],
+            "funFact": "Venus ist der einzige Planet, der sich andersrum dreht"
+        },
+        {   
+            "upid": "earth",
+            "displayName": "Erde",
+            "position": 3,
+            "type": "stone",
+            "diameterKm": 12756,
+            "massInE20kg": 59700,
+            "dayLengthInHours": 24,
+            "yearLengthInDays": 365,
+            "numberOfMoons": 1,
+            "notableSpaceMissions": ["ISS"],
+            "funFact": ""
+        },
+        {   
+            "upid": "mars",
+            "displayName": "Mars",
+            "position": 4,
+            "type": "stone",
+            "diameterKm": 6792,
+            "massInE20kg": 6420,
+            "dayLengthInHours": 25,
+            "yearLengthInDays": 687,
+            "numberOfMoons": 2,
+            "notableSpaceMissions": ["Mars Odyssey","Curiosity"],
+            "funFact": ""
+        },
+        {   
+            "upid": "jupiter",
+            "displayName": "Jupiter",
+            "position": 5,
+            "type": "gas",
+            "diameterKm": 142984,
+            "massInE20kg": 18980000,
+            "dayLengthInHours": 10,
+            "yearLengthInDays": 4331,
+            "numberOfMoons": 95,
+            "notableSpaceMissions": ["Juno","JUICE","Europa Clipper"],
+            "funFact": ""
+        },
+        {   
+            "upid": "saturn",
+            "displayName": "Saturn",
+            "position": 6,
+            "type": "gas",
+            "diameterKm": 120536,
+            "massInE20kg": 5680000,
+            "dayLengthInHours": 11,
+            "yearLengthInDays": 10747,
+            "numberOfMoons": 274,
+            "notableSpaceMissions": ["Pioneer 11"],
+            "funFact": ""
+        },
+        {   
+            "upid": "uranus",
+            "displayName": "Uranus",
+            "position": 7,
+            "type": "ice",
+            "diameterKm": 51118,
+            "massInE20kg": 868000,
+            "dayLengthInHours": 17,
+            "yearLengthInDays": 30589,
+            "numberOfMoons": 28,
+            "notableSpaceMissions": ["Voyager II"],
+            "funFact": ""
+        },
+        {   
+            "upid": "neptune",
+            "displayName": "Neptun",
+            "position": 8,
+            "type": "ice",
+            "diameterKm": 49528,
+            "massInE20kg": 1020000,
+            "dayLengthInHours": 16,
+            "yearLengthInDays": 59800,
+            "numberOfMoons": 16,
+            "notableSpaceMissions": ["Voyager II"],
+            "funFact": ""
+        }
+    ]
+}
