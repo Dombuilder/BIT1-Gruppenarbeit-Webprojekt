@@ -1,45 +1,99 @@
-* {
-  box-sizing: border-box;
+nav#navigation {
+    background-color: rgba(10,10,30,0.85);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid #4b5bff;
+    box-shadow: 0 2px 15px rgba(75,91,255,0.4);
+    z-index: 10;
+
+}
+.nav-leiste {
+    background: transparent;
+    padding: 0 20px;
+    height: 60px; /* Höhe der Navigationsleiste */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*logo links, menü rechts*/
+
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+    padding-top: 60px; /* Platz für die Navigationsleiste */
 }
 
-/* Style the header */
-.header {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
+section {
+    scroll-margin-top: 60px; /* Platz für die Navigationsleiste beim Scrollen zu einem Abschnitt */
 }
 
-/* Container for flexboxes */
-.row {
-  display: -webkit-flex;
-  display: flex;
+.nav-logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 8px 0px;
+}
+.logo-emoji {
+    font-size: 32px;
+    margin-right: 8px;
+    vertical-align: middle;
 }
 
-/* Create three equal columns that sits next to each other */
-.column {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+
+.nav-link {
+    color: #e8e8ff;
+    padding: 14px 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+}
+.nav-link:hover {
+    color: #ffd166;
+    border-bottom: 3px solid #ffd166;
 }
 
-/* Style the footer */
-.footer {
-  background-color: #f1f1f1;
-  padding: 10px;
-  text-align: center;
+
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    /*Dunkler Verlauf über dem Bild*/
+    background: linear-gradient(rgba(5,5,30,0.5), rgba(5,5,30,0.85)),
+    url("bilder/sonnensystem.jpg") center/cover no-repeat;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .row {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
+.hero-text {
+    max-width: 700px;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin: 0 0 10px;
+}
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.hero-button {
+    display: inline-block;
+    padding: 14px 34px;
+    color: #1a1a40;
+    background-color: #ffd166;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(255,209,102,0.6);
+    transition: all 0.3s;
+}
+.hero-button:hover {
+    background-color: #f4a261;
+    box-shadow: 0 0 25px rgba(244,162,97,0.8);
+    transform: translateY(-3px);
 }

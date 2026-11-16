@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" src="">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link 
-        rel="stylesheet"
-        href="styles.css"
-    >
+        rel="stylesheet"   
+        href="styles.css">
+    
     <script src="scripts.js" defer></script>
     <title>Planeten Gallery</title>
 </head>
@@ -17,7 +18,21 @@
     }
 </style>
 <body>
+    <nav id="navigation" class="w3-top">
+            <div class="w3-bar nav-leiste">
+            <a href="index.html" class="w3-bar-item nav-logo" aria-label="Zur Startseite">&#x1FA90;</a>
+
+            <div>
+            <a href="index.html" class="w3-bar-item nav-link">Startseite</a>
+            <a href="gallery.html" class="w3-bar-item nav-link">Planeten</a>
+            <a href="test.html" class="w3-bar-item nav-link">Filter</a>
+            <a href="#impressum" class="w3-bar-item nav-link">Impressum</a>
+
+            </div>
+          </div>
+        </nav>
     
+    <section id="gallery">
     <h1>Unser Sonnensystem</h1>
 
     <div class="PlanetenSlidedshow">
@@ -33,6 +48,7 @@
         <img class="PlanetSlides" src="img/Uranus.png">
         <img class="PlanetSlides" src="img/Neptun.png">
     </div>
+</section>
 
     <p>Wähle einen Planeten aus um mehr über diesen zu erfahren</p>
 
@@ -50,6 +66,13 @@
             <option value="neptun">Neptun</option>
         </select>
     </div>
-    
+
+   <footer id="footer">
+    <p>
+        <a href="index.html#impressum">Impressum</a>
+    </p>
+    <p>&copy; 2026 Nonames</p>
+</footer>
+
 </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="de">
     <head>
         <meta charset="UTF-8">
@@ -6,32 +6,39 @@
         <title>Sonnensystem - Startseite</title>
         
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="styles.css">    
 
     </head>
     <body>
-        <nav id="navigation">
-            <a href="index.html">Startseite</a> 
-            <a href="planeten.html">Planeten</a>
-            <a href="filter.html">Filter</a>
-            <a href="#impressum">Impressum</a>
+        <nav id="navigation" class="w3-top">
+            <div class="w3-bar nav-leiste">
+            <a href="index.html" class="w3-bar-item nav-logo" aria-label="Zur Startseite">&#x1FA90;</a>
+
+            <div>
+            <a href="index.html" class="w3-bar-item nav-link">Startseite</a>
+            <a href="gallery.html" class="w3-bar-item nav-link">Planeten</a>
+            <a href="test.html" class="w3-bar-item nav-link">Filter</a>
+            <a href="#impressum" class="w3-bar-item nav-link">Impressum</a>
 
             <!--<a href="quiz.html">Quiz</a> ?-->
-
+            </div>
+          </div>
         </nav>
 
-<section id="startseite">
+<section id="startseite" class="hero">
+    <div class="hero-text">
     <h1>Willkommen im Sonnensystem</h1>
-
-<img src="bilder/sonnensystem.jpg" alt="Sonnensystem" width="600" height="400">
-
-    <p>Eine Reise durch unser Sonnensystem</p>
+ <p>Eine Reise durch unser Sonnensystem</p>
+ <!--Button führt direkt zu den Planeten-->
+ <a href="gallery.html" class="hero-button">Reise starten</a>
+    </div>
 
 </section>
 
-<section id="allgemein">
+<section id="allgemein" class="w3-container w3-light-grey w3-padding-64">
     <h2>Das Sonnensystem im Überblick</h2>
-    <table>
-        <tr>
+    <table class="w3-table w3-striped w3-bordered">
+        <tr class="w3-dark-grey">
             <th>Typ</th>
             <th>Beispiele</th>
         </tr>
@@ -51,23 +58,33 @@
     </table>
 </section>
 
-<section id="entdecken">
+<section id="entdecken" class="w3-container w3-light-grey w3-padding-64">
     <h2>Was gibt es zu entdecken?</h2>
-    <p>
-        <a href="planeten.html">Planeten</a>:
-        Jeder Planet mit Bildern und Informationen dazu. 
+    <div class="w3-row-padding">
+        <div class="w3-half">
+        <div class="w3-card w3-white w3-padding">
+        <h3><a href="gallery.html">Planeten</a></h3>
+       <p> Jeder Planet mit Bildern und Informationen dazu. </p>
+    </div>
+    </div>
 
-    </p>
-    <p>
-        <a href="filter.html">Filter</a>:
-        Finde Planeten nach bestimmten Kriterien.
-    </p>
+    <div class="w3-half">
+        <div class="w3-card w3-white w3-padding">
+        <h3><a href="test.html">Filter</a></h3>
+        <p> Finde Planeten nach bestimmten Kriterien. </p>
+    </div>
+    </div>
+    </div>
 </section>
 
-<section id="impressum">
+<section id="impressum" class="w3-container w3-padding-64">
     <h2>Impressum</h2>
     <p>Nonames</p>
 </section>
+
+<footer id="footer" class="w3-container w3-black w3-center w3-padding-32">
+    <p>&copy; 2026 Nonames.</p>
+</footer>
 
     </body>
 </html>
