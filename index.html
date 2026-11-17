@@ -6,7 +6,8 @@
         <title>Sonnensystem - Startseite</title>
         
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="styles.css">    
+        <link rel="stylesheet" href="styles.css">   
+        <script src="scripts.js" defer></script>
 
     </head>
     <body>
@@ -39,15 +40,15 @@
     <h2>Das Sonnensystem im Überblick<span class="sonne">&#x2600;&#xFE0F;</span></h2>     
     <table class="w3-table w3-striped w3-bordered">
         <tr class="w3-dark-grey">
-            <th>Planet</th>
-            <th>Abstand zur Sonne</th>
-            <th>Dauer von einem Tag</th>
-            <th>Dauer von einem Jahr</th>
-            <th>Durchschnittstemperatur</th>
+            <th aria-sort="ascending"><button>Planet</button></th>
+            <th aria-sort="ascending"><button>Abstand zur Sonne</button></th>
+            <th aria-sort="ascending"><button>Dauer von einem Tag</button></th>
+            <th aria-sort="ascending"><button>Dauer von einem Jahr</button></th>
+            <th aria-sort="ascending"><button>Durchschnittstemperatur</button></th>
         </tr>
         <tr>
             <td>Merkur</td>
-            <td>58 Mio. km</td>
+            <td>58 Mio. km</td> 
             <td>59 Erdtage</td>
             <td>88 Tage</td>
             <td>167 Grad Celcius</td>
