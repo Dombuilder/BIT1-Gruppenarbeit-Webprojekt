@@ -25,8 +25,9 @@
 
 <body>
     <label for="planetSelection">Filter:</label>
-    <select id="planetDataSelection" name="planetSelection" onchange="displayPlanetData()" disabled>
-        <option value="empty">keine Auswahl</option>
+    <select id="planetDataSelection" name="planetSelection" onchange="displayPlanetDataByType(this.value)" disabled>
+        <option value="none" id="disableOnSelection">keine Auswahl</option>
+        <option value="empty">Alle Planeten</option>
         <option value="stone">Steinplaneten</option>
         <option value="gas">Gasriesen</option>
         <option value="ice">Eisriesen</option>

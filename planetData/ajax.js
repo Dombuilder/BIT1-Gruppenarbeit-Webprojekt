@@ -15,8 +15,7 @@ function fetchData() {
                 return;
             }
 
-            planetsFetch = data.planets
-            displayPlanetData();
+            planetsFetch = data.planets;
 
             document.getElementById("planetDataSelection").disabled = false;
 
@@ -28,11 +27,39 @@ function fetchData() {
 }
 
 
-function displayPlanetData() {
-    let currentSelection = document.getElementById("planetDataSelection").value
-    let planetsOutput = filterPlanetsByType(planetsFetch, currentSelection)
+function displayPlanetDataByType(selection) {
+    if (selection === null || selection === "none") return;
+    if (selection === "empty") displayPlanetData(planetsFetch);
 
-    document.getElementById("planetDataOutput").innerHTML = createPlanetDataString(planetsOutput);
+    let planetsOutput = filterPlanetsByType(planetsFetch, selection);
+
+    displayPlanetData(planetsOutput);
+
+    document.getElementById("disableOnSelection").disabled = true;
+}
+
+function displayPlanetDataByName(selection) {
+    if (selection === null || selection === "none") return;
+    let planetsOutput = getPlanetById(planetsFetch, selection);
+    
+    displayPlanetData(planetsOutput);
+
+        document.getElementById("disableOnSelection").disabled = true;
+}
+
+function displayPlanetData(planets){
+    let ausgabe = "";
+
+    if(!Array.isArray(planets)){
+        document.getElementById("planetDataOutput").innerHTML = createPlanetDataString(planets);
+        return;
+    }
+
+    planets.forEach(function(planet){
+        ausgabe += createPlanetDataString(planet);
+    })
+
+    document.getElementById("planetDataOutput").innerHTML = ausgabe;
 }
 
 
@@ -50,20 +77,30 @@ function determineType(type) {
 
 function filterPlanetsByType(planets, type) {
     if (type === null || type === "empty") {
-        return planets
+        return planets;
     }
 
     const filteredPlanets = planets.filter(function (planet) {
         return planet.type === type;
     })
-    return filteredPlanets
+    return filteredPlanets;
 }
 
-function createPlanetDataString(planets) {
-    let ausgabe = "";
+function getPlanetById(planets, id){
+    if (id === null || id === "empty" || id === "none") {
+        return planets;
+    }
 
-    planets.forEach(function (planet) {
-        ausgabe += `<h3>${planet.displayName}</h3>
+    const foundPlanet = planets.find((planet)=> {
+        if (planet.upid == id){
+            return [planet];
+        }
+    })
+    return foundPlanet;
+}
+
+function createPlanetDataString(planet) {
+    return `<h3>${planet.displayName}</h3>
                 <p>Position im Sonnensystem: ${planet.position}<br>
                 Art von Planet: ${determineType(planet.type)} <br>
                 Äquatorialdurchmesser: ${planet.diameterKm} km <br>
@@ -74,8 +111,6 @@ function createPlanetDataString(planets) {
                 Wichtige Raumfahrtmissionen: ${planet.notableSpaceMissions} <br>
                 Fun Fact: ${planet.funFact} <br>
                 </p>`;
-    });
-    return ausgabe;
 }
 
 
