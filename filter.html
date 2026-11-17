@@ -10,38 +10,45 @@
     <title>test</title>
 </head>
 <nav id="navigation" class="w3-top">
-            <div class="w3-bar nav-leiste">
-            <a href="index.html" class="w3-bar-item nav-logo" aria-label="Zur Startseite">&#x1F52D;</a>
+    <div class="w3-bar nav-leiste">
+        <a href="index.html" class="w3-bar-item nav-logo" aria-label="Zur Startseite">&#x1F52D;</a>
 
-            <div>
+        <div>
             <a href="index.html" class="w3-bar-item nav-link">Startseite</a>
             <a href="gallery.html" class="w3-bar-item nav-link">Planeten</a>
             <a href="filter.html" class="w3-bar-item nav-link">Filter</a>
             <a href="index.html#impressum" class="w3-bar-item nav-link">Impressum</a>
 
-            </div>
-          </div>
-        </nav>
+        </div>
+    </div>
+</nav>
 
 <body>
-    <label for="planetSelection">Filter:</label>
-    <select id="planetDataSelection" name="planetSelection" onchange="displayPlanetDataByType(this.value)" disabled>
-        <option value="none" id="disableOnSelection">keine Auswahl</option>
-        <option value="empty">Alle Planeten</option>
-        <option value="stone">Steinplaneten</option>
-        <option value="gas">Gasriesen</option>
-        <option value="ice">Eisriesen</option>
-    </select>
-
-    <div id="planetDataOutput">
+    <div class="w3-container w3-light-grey w3-padding-64">
+        <label for="planetSelection"><h2>Filter:</h2></label>
+        <select id="planetDataSelection" name="planetSelection" class="w3-select" onchange="displayPlanetDataByType(this.value)" disabled>
+            <option value="none" id="disableOnSelection">keine Auswahl</option>
+            <option value="empty">Alle Planeten</option>
+            <option value="stone">Steinplaneten</option>
+            <option value="gas">Gasriesen</option>
+            <option value="ice">Eisriesen</option>
+        </select>
     </div>
 
- <footer id="footer">
-    <p>
-        <a href="index.html#impressum">Impressum</a>
-    </p>
-    <p>&copy; 2026 Nonames</p>
-</footer>
+    <div id="planetDataOutput" class="w3-container w3-border-top w3-border-bottom">
+        <div class="w3-panel w3-light-grey w3-round w3-leftbar w3-padding-64">
+        <p><i>
+            keine Auswahl getroffen
+        </i></p>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <p>
+            <a href="index.html#impressum">Impressum</a>
+        </p>
+        <p>&copy; 2026 Nonames</p>
+    </footer>
 
 
 </body>

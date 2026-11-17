@@ -100,7 +100,8 @@ function getPlanetById(planets, id){
 }
 
 function createPlanetDataString(planet) {
-    return `<h3>${planet.displayName}</h3>
+    return `<div class="w3-panel w3-light-grey w3-round w3-leftbar">
+                <h3>${planet.displayName}</h3>
                 <p>Position im Sonnensystem: ${planet.position}<br>
                 Art von Planet: ${determineType(planet.type)} <br>
                 Äquatorialdurchmesser: ${planet.diameterKm} km <br>
@@ -108,9 +109,10 @@ function createPlanetDataString(planet) {
                 Länge eines Tages: ${planet.dayLengthInHours} Stunden <br>
                 Länge eines Jahres: ${planet.yearLengthInDays} Tage <br>
                 Anzahl an bekannten Monden: ${planet.numberOfMoons} <br>
-                Wichtige Raumfahrtmissionen: ${planet.notableSpaceMissions} <br>
+                Wichtige Raumfahrtmissionen: ${planet.notableSpaceMissions.join(", ")} <br>
                 Fun Fact: ${planet.funFact} <br>
-                </p>`;
+                </p>
+            </div>`;
 }
 
 

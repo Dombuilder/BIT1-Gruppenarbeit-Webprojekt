@@ -52,7 +52,7 @@
 
     <p>Wähle einen Planeten aus um mehr über diesen zu erfahren</p>
 
-    <div id="planetselector">
+    <div id="planetselector" class="w3-container w3-light-grey w3-padding-64">
         <label for="Planeten">Wähle einen Planeten: </label>
         <select name="Planeten" id="planetDataSelection" onchange="displayPlanetDataByName(this.value)">
             <option value="none" id="disableOnSelection">keine Auswahl</option>
@@ -66,8 +66,12 @@
             <option value="neptune">Neptun</option>
         </select>
     </div>
-    <div id ="planetDataOutput">
-
+    <div id ="planetDataOutput" class="w3-container w3-border-top w3-border-bottom">
+        <div class="w3-panel w3-light-grey w3-round w3-leftbar w3-padding-64">
+        <p><i>
+            keine Auswahl getroffen
+        </i></p>
+        </div>
     </div>
 
    <footer id="footer">
