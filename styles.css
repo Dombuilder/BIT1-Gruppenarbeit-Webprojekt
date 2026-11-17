@@ -65,7 +65,7 @@ section {
     color: white;
     /*Dunkler Verlauf über dem Bild*/
     background: linear-gradient(rgba(5,5,30,0.5), rgba(5,5,30,0.85)),
-    url("bilder/sonnensystem.jpg") center/cover no-repeat;
+    url("img/sonnensystem.jpg") center/cover no-repeat;
 }
 
 .hero-text {
@@ -102,4 +102,52 @@ footer#footer {
     background-color: #f1f1f1;
     padding: 10px;
     text-align: center;
+}
+
+/*Gallery Styling*/
+
+#gallery-text {
+    display: flex;
+    justify-content: center;
+    color: white;
+    opacity: 0.75;
+}
+
+#planetselector {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#planetDataSelection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid gray;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 10px;
+    background-color:#1a1a40;
+}
+
+.PlanetSlides { /*Versteckt die Bilder der Slideshow*/
+        display:none;
+    }
+
+.PlanetenSlidedshow {
+    display: flex;
+    justify-content: center;
+}
+
+.Lefty,
+.Righty {
+  background-color: black;
+  border: 10px solid black;
+  cursor: pointer;
+  position: relative;
+  color: white;
 }

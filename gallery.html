@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪐</text></svg>">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link 
         rel="stylesheet"   
@@ -13,8 +14,9 @@
     <title>Planeten Gallery</title>
 </head>
 <style>
-    .PlanetSlides {
-        display:none;
+    body { /*Color Gradient*/
+        background: #030000;
+        background: radial-gradient(circle, rgba(3, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 72%, rgba(22, 22, 56, 1) 100%);
     }
 </style>
 <body>
@@ -33,11 +35,11 @@
         </nav>
     
     <section id="gallery">
-    <h1>Unser Sonnensystem</h1>
+    
+        <h1 id="gallery-text">Unser Sonnensystem</h1>
 
     <div class="PlanetenSlidedshow">
         <button class="Lefty" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="Righty" onclick="plusDivs(1)">&#10095;</button>
 
         <img class="PlanetSlides" src="img/Mercury.jpg">
         <img class="PlanetSlides" src="img/Venus.jpg">
@@ -47,13 +49,14 @@
         <img class="PlanetSlides" src="img/Saturn.jpg" style="width:500px;">
         <img class="PlanetSlides" src="img/Uranus.png">
         <img class="PlanetSlides" src="img/Neptun.png">
+
+        <button class="Righty" onclick="plusDivs(1)">&#10095;</button>
     </div>
 </section>
 
-    <p>Wähle einen Planeten aus um mehr über diesen zu erfahren</p>
+    <div id="planetselector">
+        <h4 id="gallery-text">Wähle einen Planeten aus um mehr über diesen zu erfahren</h4>
 
-    <div id="planetselector" class="w3-container w3-light-grey w3-padding-64">
-        <label for="Planeten">Wähle einen Planeten: </label>
         <select name="Planeten" id="planetDataSelection" onchange="displayPlanetDataByName(this.value)">
             <option value="none" id="disableOnSelection">keine Auswahl</option>
             <option value="mercury">Merkur</option>
@@ -66,6 +69,8 @@
             <option value="neptune">Neptun</option>
         </select>
     </div>
+    <br>
+
     <div id ="planetDataOutput" class="w3-container w3-border-top w3-border-bottom">
         <div class="w3-panel w3-light-grey w3-round w3-leftbar w3-padding-64">
         <p><i>
