@@ -6,7 +6,7 @@ function plusDivs(n) {
 }
 
 function showDivs(n) {
-  const slides = document.querySelectorAll(".PlanetenSlides");
+  const slides = document.querySelectorAll(".PlanetSlides");
   if (slides.length === 0) return; //Die Tabelle auf der Startseite funktioniert sonst nicht
 
   if (n > slides.length) {slideIndex = 1}
