@@ -12,9 +12,10 @@
             "numberOfMoons": 0,
             "notableSpaceMissions": [
                 "Mariner 10",
-                "MESSENGER"
+                "MESSENGER",
+                "BepiColombo"
             ],
-            "funFact": ""
+            "funFact": "Merkur ist der Planet mit dem größten Kern. Sein Eisenkern nimmt rund 75% des Durchmessers ein."
         },
         {
             "upid": "venus",
@@ -29,9 +30,10 @@
             "notableSpaceMissions": [
                 "Venera",
                 "Magellan",
-                "Venus Express"
+                "Venus Express",
+                "Akatsuki"
             ],
-            "funFact": "Venus ist der einzige Planet, der sich andersrum dreht"
+            "funFact": "Venus dreht sich andersrum als alle anderen Planeten im Sonnensystem. Die Sonne geht dort also im Westen auf."
         },
         {
             "upid": "earth",
@@ -46,7 +48,7 @@
             "notableSpaceMissions": [
                 "ISS"
             ],
-            "funFact": ""
+            "funFact": "Hier stehst du gerade drauf."
         },
         {
             "upid": "mars",
@@ -60,9 +62,11 @@
             "numberOfMoons": 2,
             "notableSpaceMissions": [
                 "Mars Odyssey",
-                "Curiosity"
+                "Curiosity",
+                "Perseverence",
+                "Mars Reconnaissance Orbiter"
             ],
-            "funFact": ""
+            "funFact": "Der Mars erscheint rot, weil das Eisen in dem Sand auf der Oberfläche rostet."
         },
         {
             "upid": "jupiter",
@@ -79,7 +83,7 @@
                 "JUICE",
                 "Europa Clipper"
             ],
-            "funFact": ""
+            "funFact": "Der große rote Fleck ist ein riesiger Sturm der aktuell so groß ist wie gesamte Erde und zu seiner größten beobachteten Ausdehnung dreimal so groß war."
         },
         {
             "upid": "saturn",
@@ -92,9 +96,11 @@
             "yearLengthInDays": 10747,
             "numberOfMoons": 274,
             "notableSpaceMissions": [
-                "Pioneer 11"
+                "Pioneer 11",
+                "Cassini",
+                "Huygens Lander"
             ],
-            "funFact": ""
+            "funFact": "Saturns Ringe bestehen aus vielen kleinen Brocken Eis und Gestein."
         },
         {
             "upid": "uranus",
@@ -109,7 +115,7 @@
             "notableSpaceMissions": [
                 "Voyager II"
             ],
-            "funFact": ""
+            "funFact": "Auch der Uranus hat 13 Ringe."
         },
         {
             "upid": "neptune",
@@ -124,7 +130,7 @@
             "notableSpaceMissions": [
                 "Voyager II"
             ],
-            "funFact": ""
+            "funFact": "Manchmal ist der Zwergplanet Pluto näher an der Sonne als Neptun, weil Pluto einen elliptischen Orbit hat."
         }
     ]
 }
