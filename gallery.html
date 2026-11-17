@@ -9,6 +9,7 @@
         href="styles.css">
     
     <script src="scripts.js" defer></script>
+    <script src="planetData/ajax.js" defer></script>
     <title>Planeten Gallery</title>
 </head>
 <style>
@@ -53,17 +54,20 @@
 
     <div id="planetselector">
         <label for="Planeten">Wähle einen Planeten: </label>
-        <select name="Planeten" id="planets">
-            <option>-Bitte wählen-</option>
-            <option value="merkur">Merkur</option>
+        <select name="Planeten" id="planetDataSelection" onchange="displayPlanetDataByName(this.value)">
+            <option value="none" id="disableOnSelection">keine Auswahl</option>
+            <option value="mercury">Merkur</option>
             <option value="venus">Venus</option>
-            <option value="erde">Erde</option>
+            <option value="earth">Erde</option>
             <option value="mars">Mars</option>
             <option value="jupiter">Jupiter</option>
             <option value="saturn">Saturn</option>
             <option value="uranus">Uranus</option>
-            <option value="neptun">Neptun</option>
+            <option value="neptune">Neptun</option>
         </select>
+    </div>
+    <div id ="planetDataOutput">
+
     </div>
 
    <footer id="footer">
